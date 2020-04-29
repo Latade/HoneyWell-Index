@@ -1,0 +1,121 @@
+.Hero {
+  background: linear-gradient(
+      280.42deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.1),
+      rgba(166, 30, 32, 0.35),
+      rgba(166, 30, 32, 0.8)
+    ),
+    url("../images/heroimg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+}
+
+.HeroText {
+  /* position: absolute; */
+  margin: 0;
+  max-width: 530px;
+  padding: 250px 130px 0;
+}
+
+.HeroRectangle {
+  position: absolute;
+  width: 54px;
+  height: 18px;
+  margin: -20px 7px;
+  /* left: 137px;
+  top: 224px; */
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 2px;
+  opacity: 0;
+  animation: HeroAnimation 4s 0.5s forwards cubic-bezier(0.3, 0.8, 0.3, 1);
+}
+
+.HeroText h3 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 0.8;
+  opacity: 0;
+  animation: HeroAnimation 4s 0.5s forwards cubic-bezier(0.3, 0.8, 0.3, 1);
+}
+
+.HeroText h1 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 190px;
+  font-weight: 900;
+  line-height: 0.9;
+  opacity: 0;
+  animation: HeroAnimation 4s 0.5s forwards cubic-bezier(0.3, 0.8, 0.3, 1);
+}
+
+.HeroText p {
+  margin: 0;
+  color: white;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.2;
+  padding: 55px 0;
+  opacity: 0;
+  animation: HeroAnimation 5s 0.8s forwards cubic-bezier(0.3, 0.8, 0.3, 1);
+}
+
+@media (max-width: 640px) {
+  .Hero {
+    height: 300px;
+  }
+
+  .HeroText {
+    margin: 0;
+    max-width: 230px;
+    padding: 90px 60px;
+  }
+
+  .HeroRectangle {
+    position: absolute;
+    width: 24px;
+    height: 8px;
+    margin: -10px 2px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 1px;
+  }
+
+  .HeroText h3 {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 0.8;
+  }
+
+  .HeroText h1 {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0.9;
+  }
+
+  .HeroText p {
+    margin: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.2;
+    padding: 15px 0;
+  }
+}
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

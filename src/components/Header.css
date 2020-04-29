@@ -1,0 +1,80 @@
+.Header {
+  width: 100%;
+  height: 90px;
+  background-color: white;
+}
+
+.HeaderGroup {
+  max-width: 1640px;
+  display: grid;
+  grid-template-columns: 350px auto;
+  align-items: center;
+  padding: 7.5px 130px;
+}
+
+.HeaderLinks {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.HeaderLinks a {
+  color: #7b1617;
+  text-decoration: none;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: right;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Header a:hover {
+  transform: translateY(-3px);
+}
+
+.HeaderLinks a img {
+  padding: 0 0 0 12px;
+}
+
+/*----------Medis Screens----------*/
+@media (max-width: 640px) {
+  .Header {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+  }
+
+  .HeaderGroup {
+    max-width: 520px;
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    padding: 3px 60px;
+  }
+
+  .HeaderGroup img {
+    width: 60px;
+  }
+
+  .HeaderLinks {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+  }
+
+  .HeaderLinks a {
+    font-size: 10px;
+  }
+
+  .Header a:nth-child(3) {
+    display: none;
+  }
+
+  .Header a:nth-child(4) {
+    display: none;
+  }
+
+  .HeaderLinks a img {
+    width: 6px;
+    padding: 0 0 0 6px;
+  }
+}
